@@ -1,0 +1,14 @@
+server:
+  port: 8020
+  # 应用名称 （nacos会将该名称当做服务名称）
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      #先启动注册中心，cd /Users/ezekiel/DevTool/nacos 、bin/startup.sh
+      server-addr: 192.168.10.2:8848 # 或者localhost:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public

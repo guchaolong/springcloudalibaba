@@ -1,0 +1,17 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    # gateway的配置
+    gateway:
+      discovery:
+        locator:
+          enabled: true  #是否启动自动识别nacos服务
+    #配置Nacos
+    nacos:
+      discovery:
+        server-addr: 192.168.65.220:8847
+        username: nacos
+        password: nacos
