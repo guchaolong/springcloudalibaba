@@ -166,7 +166,23 @@ sentinel控制台：系统规则，新增系统规则，cpu使用率，阈值 0.
 sentinel 规则持久化
 
 
+# Seata
+> 要搭建 mysql 等，未实际测试
 
+场景：下单，order服务中，调 stock 服务扣减库存，然后 order 服务中新增订单
+未使用 seata:
+order-seata服务
+stock-seata服务
+
+使用 seata:
+alibaba-order-seata服务
+alibaba-stock-seata服务
+
+
+# Spring cloud gateway
+
+
+# SkyWalking
 
 
 
